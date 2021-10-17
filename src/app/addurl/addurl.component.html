@@ -1,0 +1,26 @@
+<app-sidebar></app-sidebar>
+
+<div class="conitainer  mt-3" >
+    <form [formGroup]="formGroup" (ngSubmit)="saveURL()">
+       
+            <div class="col-lg-12"> 
+                <div class="row justify-content-center">
+                    <label for="">Long URL</label>
+                    <div class="col-lg-4"><input  type="text" formControlName="longUrl" class="form-control" placeholder="Enter the long url"> </div>
+                </div>
+                    
+                <div class="row justify-content-center mt-2">
+                    <label for="">Description</label>
+                    <div class="col-lg-4"><input  type="text" formControlName="desc" class="form-control" placeholder="Enter description"> </div>
+                </div>
+                       
+                              
+            </div>
+            <div class="row justify-content-center mt-2">
+                   
+                <div class="col-lg-1"><input type="submit" class="btn btn-outline-success"> </div>
+            </div>   
+       
+    </form>
+</div>
+    
