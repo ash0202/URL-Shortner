@@ -29,8 +29,9 @@
                           <tr *ngFor="let url of urlList">
                                 <td>{{url.id}}</td>
                                 <td>{{url.longUrl}}</td>
-                               <!-- <td><a href='{{url.longUrl}}'  target="_blank" (click)='incrementCount(url.id)'>{{url.shortUrl}}</a></td>    {{url.shortUrl}} -->
-                               <td><a href="#" [routerLink]="['/short',url.id]" target="_blank">https://short.ly/{{url.shortUrl}}</a></td> 
+                                <td><a href='{{url.longUrl}}'  target="_blank" (click)='incrementCount(url.id)'>https://short.ly/{{url.shortUrl}}</a></td>    {{url.shortUrl}} 
+                            <!--   <td><a href="#" [routerLink]="['/short',url.id]" target="_blank">https://short.ly/{{url.shortUrl}}</a></td> -->
+                            
                                <td>{{url.desc}}</td>
                                 <td>{{url.count}}</td>
                                 <td>                                   
